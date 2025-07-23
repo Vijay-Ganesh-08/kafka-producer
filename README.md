@@ -22,3 +22,4 @@ Contains Basic Java SpringBoot Application as Kafka Producer
 - spring.kafka.producer.key-serializer=org.apache.kafka.common.serialization.StringSerializer
 - spring.kafka.producer.value-serializer=org.springframework.kafka.support.serializer.JsonSerializer
 - The configuration can also be done via Java Class files. it's given in config\KafkaProducerConfig class file.
+- KafkaTemplate.send is a overloaded method, were the producer can send message to specific Partition.
