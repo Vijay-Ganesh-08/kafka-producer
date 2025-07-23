@@ -16,3 +16,9 @@ Contains Basic Java SpringBoot Application as Kafka Producer
 ### Portal Creation
 - Some companies have a UI portal to create topic and managing the same
 - That can be used to create topic with required configurations.
+
+## Sending JSON Object
+- Below properties to be added in the application.properties file in-order to send the JSON Object to Kafka Topic
+- spring.kafka.producer.key-serializer=org.apache.kafka.common.serialization.StringSerializer
+- spring.kafka.producer.value-serializer=org.springframework.kafka.support.serializer.JsonSerializer
+- The configuration can also be done via Java Class files. it's given in config\KafkaProducerConfig class file.
